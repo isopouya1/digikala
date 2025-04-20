@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+    --font-vazir : "Vazirmatn";
+
+    --color-primary : #d62e4e;
+    --color-smoke-gray : #F0F0F1 ;
+
+
+}
+
+@layer components {
+
+    .slider-crad{
+        @apply flex flex-col items-center gap-2 max-w-24 w-24 ;
+    }
+    .main-slider{
+        @apply h-40 max-w-full w-full rounded-lg ;
+    }
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
